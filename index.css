@@ -1,0 +1,173 @@
+body {
+  width: 101vw;
+  height: 97vh;
+  margin-left: -1%;
+  background-color: #cce4f5;
+  font-family: "Quicksand";
+}
+
+.hide {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Search {
+  width: 101%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #0099ff;
+  border: white solid 2px;
+}
+
+.Container {
+  width: 94%;
+  height: 100%;
+  margin-top: 1%;
+}
+
+.Form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Box {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Box-title {
+  color: white;
+  font-size: 150%;
+  padding: 0.5rem;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
+.Box-criteria {
+  width: 45%;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1rem;
+}
+.Box-button {
+  width: 12%;
+  background-color: #93fd90;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
+.Box-button:hover {
+  cursor: pointer;
+}
+
+.Sortby {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Sortby-subtitle {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  margin: 0.5rem 2rem 0.5rem 2rem;
+}
+.Sortby-submit {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 2rem 0.5rem 2rem;
+  align-self: center;
+}
+.Sortby-submit:hover {
+  cursor: pointer;
+}
+
+.Results {
+  width: 101%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #0099ff;
+  border: white solid 2px;
+  margin-top: 1%;
+}
+
+.List {
+  list-style: none;
+  width: 90%;
+  padding: 1rem;
+  margin-top: 2%;
+}
+
+.Item {
+  border: 1px solid black;
+  padding: 0.5rem;
+  background-color: white;
+  margin-bottom: 3%;
+}
+.Item-title {
+  display: flex;
+  justify-content: center;
+  color: skyblue;
+  padding: 0.5rem;
+  font-size: 2rem;
+  margin-top: 15px;
+}
+.Item-img {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 0.5rem auto 0.5rem auto;
+  max-height: 10%;
+  max-width: 60%;
+}
+.Item-description {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  color: white;
+  background-color: skyblue;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1%;
+}
+.Item-numericals {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Item-year {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  color: white;
+  background-color: skyblue;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.Item-rating {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  color: white;
+  background-color: skyblue;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=index.css.map */
