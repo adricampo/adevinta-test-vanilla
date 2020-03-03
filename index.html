@@ -5,19 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adevinta Test</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
     <section class="Search">
         <div class="Search-container Container">
             <form class="Container-form Form">
-
                 <div class="Form-box Box">
                     <h1 class="Box-title">Search:</h1>
                     <input class="Box-criteria" type="search" name="query" placeholder="criteria"/>
                     <button class="Box-button">GO</button>
                 </div>
-
                 <div class="Form-sortby Sortby">
                     <h2 class="Sortby-subtitle">Sort by:</h2>
                     <select class="Sortby-submit" name="select" onchange="onSortBy(event)">
@@ -26,7 +24,6 @@
                         <option class="Sortby-submit" value= "rate">Rate</option>
                     </select>   
                 </div>
-
             </form>
         </div>
     </section>
@@ -35,17 +32,14 @@
         <p class="Results-feedback"></p>
         <ul class="Results-list List"></ul>
     </section>
-
     
-
     <script src="./index.js"></script>
-    <script src="./fetch.js"></script>
+    <script src="./logic/retrieve-results.js"></script>
     <script src="./utils/show-data.js"></script>
     <script src="./utils/visible-element.js"></script>
-
     <script src="./utils/errors/error-texts.js"></script>
     <script src="./utils/errors/content-error.js"></script>
     <script src="./utils/errors/not-found-error.js"></script>
-
+    
 </body>
 </html>

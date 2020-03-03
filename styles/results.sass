@@ -1,90 +1,4 @@
-body
-    width: 101vw
-    height: 97vh
-    margin-left: -1%
-    background-color: #cce4f5
-    font-family: 'Quicksand'
-
-.hide
-    display: none
-
-a
-    text-decoration: none
-
-.Search
-    width: 101%
-    height: 17%
-    display: flex
-    flex-direction: column
-    justify-content: flex-start
-    align-items: center
-    background-color: #0099ff
-    border: white solid 2px
-
-.Container
-    width: 94%
-    height: 100%
-    margin-top: 1%
-
-.Form
-    width: 100%
-    height: 100%
-    display: flex
-    flex-direction: column
-
-.Box
-    width: 100%
-    height: 50%
-    display: flex
-    justify-content: space-evenly
-    align-items: center
-
-    &-title
-        color: white
-        font-size: 150%
-        padding: 0.5rem
-        margin: 0.5rem 1rem 0.5rem 1rem
-        @media only screen and (min-width: 1024px)
-            font-size: 300%
-    &-criteria
-        width: 45%
-        height: 50%
-        border-radius: 0.5rem
-        padding: 0.5rem
-        margin: 0.5rem 1rem 0.5rem 1rem
-        font-size: 1rem
-        @media only screen and (min-width: 1024px)
-            height: 40%
-
-    &-button
-        width: 12%
-        background-color: #93fd90
-        border-radius: 0.5rem
-        padding: 0.5rem
-        margin: 0.5rem 1rem 0.5rem 1rem
-        &:hover
-            cursor: pointer
-
-.Sortby
-    display: flex
-    flex-direction: row
-    justify-content: space-evenly
-    align-items: center
-    &-subtitle
-        display: flex
-        align-items: center
-        color: white
-        font-size: 90%
-        margin: .5rem 2rem .5rem 2rem
-        @media only screen and (min-width: 1024px)
-            font-size: 150%
-    &-submit
-        display: flex
-        justify-content: center
-        margin: .5rem 2rem .5rem 2rem
-        align-self: center
-        &:hover
-            cursor: pointer
+@import config
 
 .Results
     width: 101%
@@ -92,8 +6,8 @@ a
     flex-direction: column
     justify-content: flex-start
     align-items: center
-    background-color: #0099ff
-    border: white solid 2px
+    background-color: $componentsBackgroundColor
+    border: $fontPrimaryColor solid 2px
     margin-top: 1%
 
     &-feedback
@@ -102,7 +16,7 @@ a
         display: flex
         justify-content: center
         font-size: 130%
-        color: white
+        color: $fontPrimaryColor
         @media only screen and (min-width: 1024px)
             font-size: 200%
 
@@ -123,7 +37,7 @@ a
     border: 1px solid black
     border-radius: 2rem
     padding: .5rem
-    background-color: white
+    background-color: $itemBackgroundColor
     margin-bottom: 4%
     @media only screen and (min-width: 1024px)
         display: flex
@@ -138,7 +52,7 @@ a
     &-title
         display: flex
         justify-content: center
-        color: black
+        color: $fontSecondaryColor
         padding: .5rem
         font-size: 2rem
         margin-top: 15px
@@ -156,7 +70,7 @@ a
     &-description
         display: flex
         justify-content: center
-        color: black
+        color: $fontSecondaryColor
         padding: .5rem
         font-size: 1rem
         margin-bottom: 1%
@@ -173,8 +87,8 @@ a
         display: flex
         justify-content: center
         border-radius: 2rem
-        color: white
-        background-color: #0099ff
+        color: $fontPrimaryColor
+        background-color: $componentsBackgroundColor
         padding: .5rem
         font-size: 1rem
 
@@ -183,7 +97,7 @@ a
         display: flex
         justify-content: center
         border-radius: 2rem        
-        color: white
-        background-color: #0099ff
+        color: $fontPrimaryColor
+        background-color: $componentsBackgroundColor
         padding: .5rem
         font-size: 1rem

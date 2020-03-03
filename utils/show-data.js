@@ -1,4 +1,12 @@
-const showData = (data) => { 
+/**
+ * This function builds the complete unordered list with every item structure inside it. 
+ * 
+ * @param {array} => data, the output obtained in the function retrieve-results (the pending promise), we saved it in a variable 
+ * and later introduced in the function we are now. The input received here is an array that have many objects inside with the
+ * properties obtained in the retrieve-results function.
+ */
+
+const showData = (data) => { debugger
     const ul = document.getElementsByClassName('Results-list')[0]
 
     data.forEach(item => { 
