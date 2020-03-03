@@ -24,7 +24,6 @@ const onSearch = async (event) => {
     try {
         resultsList = await retrieveResults(query)
         feedback.textContent = ""
-        
         showData(resultsList)
 
     } catch (error) {
@@ -33,10 +32,8 @@ const onSearch = async (event) => {
         else feedback.textContent = UNKNOWN_MESSAGE
         
         setTimeout( () => { feedback.textContent = "" }, 3000)
-
         showElement(feedback)
     }
-
 }
 
 form.addEventListener('submit', onSearch)
