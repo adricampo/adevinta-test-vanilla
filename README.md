@@ -24,7 +24,7 @@ Users will also see different feedback messages if the information what are they
 
 User can search, sortby.
 
-![Use Cases]()
+![Use Cases](images/desktop-view-screen.png)
 
 ## Screenshoots
 
