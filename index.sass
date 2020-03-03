@@ -13,7 +13,7 @@ a
 
 .Search
     width: 101%
-    height: 15%
+    height: 17%
     display: flex
     flex-direction: column
     justify-content: flex-start
@@ -44,13 +44,17 @@ a
         font-size: 150%
         padding: 0.5rem
         margin: 0.5rem 1rem 0.5rem 1rem
-
+        @media only screen and (min-width: 1024px)
+            font-size: 300%
     &-criteria
         width: 45%
+        height: 50%
         border-radius: 0.5rem
         padding: 0.5rem
         margin: 0.5rem 1rem 0.5rem 1rem
         font-size: 1rem
+        @media only screen and (min-width: 1024px)
+            height: 40%
 
     &-button
         width: 12%
@@ -70,8 +74,10 @@ a
         display: flex
         align-items: center
         color: white
-        font-size: 1.2rem
+        font-size: 90%
         margin: .5rem 2rem .5rem 2rem
+        @media only screen and (min-width: 1024px)
+            font-size: 150%
     &-submit
         display: flex
         justify-content: center
@@ -89,40 +95,68 @@ a
     background-color: #0099ff
     border: white solid 2px
     margin-top: 1%
+
+    &-feedback
+        height: 100%
+        width: 100%
+        display: flex
+        justify-content: center
+        font-size: 130%
+        color: white
+        @media only screen and (min-width: 1024px)
+            font-size: 200%
+
 .List
+    display: flex
     list-style: none
-    width: 90%
     padding: 1rem
     margin-top: 2%
+    width: 90%
+    @media only screen and (max-width: 1023px)
+        flex-direction: column
+    @media only screen and (min-width: 1024px)
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-evenly
 
 .Item
     border: 1px solid black
+    border-radius: 2rem
     padding: .5rem
     background-color: white
-    margin-bottom: 3%
-
+    margin-bottom: 4%
+    @media only screen and (min-width: 1024px)
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        width: 25rem
+        height: 44rem
+        &:hover
+            cursor: pointer
+            transform: scale(1.02) perspective(1px)
+            
     &-title
         display: flex
         justify-content: center
-        color: skyblue
+        color: black
         padding: .5rem
         font-size: 2rem
         margin-top: 15px
-
+        @media only screen and (min-width: 1024px)
+            font-size: 2rem
     &-img
         display: flex
         justify-content: center
-        border: 1px solid black
         margin: .5rem auto .5rem auto
         max-height: 10%
-        max-width: 60%
-
+        max-width: 70%
+        @media only screen and (min-width: 1024px)
+            max-height: 50%
+            max-width: 50%
     &-description
         display: flex
         justify-content: center
-        border: 1px solid black
-        color: white
-        background-color: skyblue
+        color: black
         padding: .5rem
         font-size: 1rem
         margin-bottom: 1%
@@ -138,9 +172,9 @@ a
         width: 35%
         display: flex
         justify-content: center
-        border: 1px solid black
+        border-radius: 2rem
         color: white
-        background-color: skyblue
+        background-color: #0099ff
         padding: .5rem
         font-size: 1rem
 
@@ -148,8 +182,8 @@ a
         width: 35%
         display: flex
         justify-content: center
-        border: 1px solid black
+        border-radius: 2rem        
         color: white
-        background-color: skyblue
+        background-color: #0099ff
         padding: .5rem
         font-size: 1rem

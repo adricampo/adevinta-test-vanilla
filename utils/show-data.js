@@ -1,6 +1,6 @@
-const showData = (data) => { debugger
+const showData = (data) => { 
     const ul = document.getElementsByClassName('Results-list')[0]
-    debugger
+
     data.forEach(item => { 
         const { title, image, year, description, rating, id } = item
 
@@ -28,11 +28,11 @@ const showData = (data) => { debugger
 
         const year_ = document.createElement('p')
         year_.classList.add('Item-year')
-        year_.innerText = year
+        year_.innerText = 'Year : ' + year
         
         const rating_ = document.createElement('p')
         rating_.classList.add('Item-rating')
-        rating_.innerText = rating
+        rating_.innerText = 'Rate : ' + rating
 
         ul.append(link)
         link.append(li)

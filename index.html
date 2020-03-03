@@ -22,7 +22,7 @@
                     <h2 class="Sortby-subtitle">Sort by:</h2>
                     <select class="Sortby-submit" name="select" onchange="onSortBy(event)">
                         <option class="Sortby-submit" value= "default">Chose one:</option>
-                        <option class="Sortby-submit" value= "title">Title</option>
+                        <option class="Sortby-submit" value= "year">Year</option>
                         <option class="Sortby-submit" value= "rate">Rate</option>
                     </select>   
                 </div>
@@ -30,26 +30,22 @@
             </form>
         </div>
     </section>
+
     <section class="Results">
-        <ul class="Results-list List">
-            <!-- <li class="List-item Item">
-                <h2 class="Item-title">.Title</h2>
-                <img class="Item-img" src="./adevinta-logo.jpg" alt=""></img>
-                <p class="Item-description">.Plot</p>
-                <div class="Item-numericals">
-                    <p class="Item-year">.Year</p>
-                    <p class="Item-rating">.imdbRating</p>
-                </div>
-            </li> -->
-        </ul>
-        <p class="Feedback hide">feedback</p>
+        <p class="Results-feedback"></p>
+        <ul class="Results-list List"></ul>
     </section>
 
-    <a href=""></a>
-    <script src="./fetch.js"></script>
+    
+
     <script src="./index.js"></script>
-    <script src="./show-data.js"></script>
-    <script src="./visible-element.js"></script>
+    <script src="./fetch.js"></script>
+    <script src="./utils/show-data.js"></script>
+    <script src="./utils/visible-element.js"></script>
+
+    <script src="./utils/errors/error-texts.js"></script>
+    <script src="./utils/errors/content-error.js"></script>
+    <script src="./utils/errors/not-found-error.js"></script>
 
 </body>
 </html>
