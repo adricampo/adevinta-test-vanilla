@@ -7,8 +7,8 @@
  * @param {string} => query, information wrote on the search var by the user
  */
 
-const API_URL = 'http://www.omdbapi.com/?apikey=422350ff&s='
-const API_URL2 = 'http://www.omdbapi.com/?apikey=422350ff&i='
+const API_URL = 'https://www.omdbapi.com/?apikey=422350ff&s='
+const API_URL2 = 'https://www.omdbapi.com/?apikey=422350ff&i='
 
 function retrieveResults(query) {
     return (async () => {
