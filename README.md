@@ -7,7 +7,7 @@
 - Create a search var where introduce a text to look for movies/series.
 - The movies/series should come from an external API (https://www.omdbapi.com/)
 - Results should be listed in a grid and each result should be an item with a photo, title, description, year and rating. 
-- Items should be links (https://www.imdb.com/title​/${imdbID})
+- Items should be links with the property id concatenated to the url (url + ${imdbID})
 - The showed results could be sort by at least one field. 
 
 ## Functional Description
