@@ -42,9 +42,11 @@ User can search movies/series from the API (https://www.omdbapi.com/).
 If the searched information does exist: user will see the results on the screen.
 
 <center>
+<div>
 <img src="images/Results-screen1.png" height= "250" width="130">
 
 <img src="images/Results-screen2.png" height= "250" width="130">
+</div>
 </center>
 
 
