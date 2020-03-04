@@ -6,7 +6,7 @@
  * properties obtained in the retrieve-results function.
  */
 
-const showData = (data) => { debugger
+const showData = (data) => {
     const ul = document.getElementsByClassName('Results-list')[0]
 
     data.forEach(item => { 

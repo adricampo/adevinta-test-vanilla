@@ -33,51 +33,39 @@ User can search, sortby.
 
 User can search movies/series from the API (https://www.omdbapi.com/).
 
-<center>
 <img src="images/Initial-screen.png" height= "250" width="130">
-</center>
 
 #### Results Screen
 
 If the searched information does exist: user will see the results on the screen.
 
-<center>
 <div>
 <img src="images/Results-screen1.png" height= "250" width="130">
 
 <img src="images/Results-screen2.png" height= "250" width="130">
 </div>
-</center>
 
 
 #### Sortby Screen
 
 When there are some results, user can sort by published year or rating.
 
-<center>
 <img src="images/Sortby-screen.png" height= "250" width="130">
-</center>
 
 #### Input empty Screen
 
 When user does not write anything on the search var and submit, it will see this feedback error during 3 seconds.
 
-<center>
 <img src="images/Input-empty-screen.png" height= "250" width="130">
-</center>
 
 ####  Information not found Screen
 
 When the information searched by the user does not find any result on the API, it will see this feedback error during 3 seconds.
 
-<center>
 <img src="images/Info-not-found-screen.png" height= "250" width="130">
-</center>
 
 #### Desktop view Screen
 
 This is how it looks like in desktop mode. 
 
-<center>
 <img src="images/Desktop-view-screen.png" height= "250" width="430">
-</center>

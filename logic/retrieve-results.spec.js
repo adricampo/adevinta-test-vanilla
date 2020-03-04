@@ -3,24 +3,25 @@ describe('logic retrieve-results', () => {
     it('should retrieve a list of movies/series', async () => {
             const query = "dragon ball"
             const data = await retrieveResults(query)
+            const movie = data[0]
 
-            expect.data(data.title).toBeDefined()
-            expect.data(data.title.length).toBeGreaterThan(0)
-            
-            expect.data(data.image).toBeDefined()
-            expect.data(data.image.length).toBeGreaterThan(0)
+            expect(movie.title).toBeDefined()
+            expect(movie.title.length).toBeGreaterThan(0)
 
-            expect.data(data.year).toBeDefined()
-            expect.data(data.year.length).toBeGreaterThan(0)
+            expect(movie.image).toBeDefined()
+            expect(movie.image.length).toBeGreaterThan(0)
 
-            expect.data(data.id).toBeDefined()
-            expect.data(data.id.length).toBeGreaterThan(0)
+            expect(movie.year).toBeDefined()
+            expect(movie.year.length).toBeGreaterThan(0) 
 
-            expect.data(data.description).toBeDefined()
-            expect.data(data.description.length).toBeGreaterThan(0)
+            expect(movie.id).toBeDefined()
+            expect(movie.id.length).toBeGreaterThan(0)
 
-            expect.data(data.rating).toBeDefined()
-            expect.data(data.rating.length).toBeGreaterThan(0)
+            expect(movie.description).toBeDefined()
+            expect(movie.description.length).toBeGreaterThan(0)
+
+            expect(movie.rating).toBeDefined()
+            expect(movie.rating.length).toBeGreaterThan(0)
 
     })
 
@@ -37,7 +38,7 @@ describe('logic retrieve-results', () => {
     })
 
     it('should throw an error because there are no results for the query written', async() => {
-        const wrongQuery = ""
+        const wrongQuery = "kcnkjwn"
 
         try {
             await retrieveResults(wrongQuery)
