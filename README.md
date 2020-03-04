@@ -77,5 +77,5 @@ When the information searched by the user does not find any result on the API, i
 This is how it looks like in desktop mode. 
 
 <center>
-<img src="images/desktop-view-screen.png" height= "250" width="430">
+<img src="images/Desktop-view-screen.png" height= "250" width="430">
 </center>
