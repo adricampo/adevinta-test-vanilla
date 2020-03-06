@@ -7,45 +7,52 @@
  * @param {string} => query, information wrote on the search var by the user
  */
 
-const API_URL = 'https://www.omdbapi.com/?apikey=422350ff&s='
-const API_URL2 = 'https://www.omdbapi.com/?apikey=422350ff&i='
+const API_URL_SEARCH = 'https://www.omdbapi.com/?apikey=422350ff&s='
+const API_URL_ID = 'https://www.omdbapi.com/?apikey=422350ff&i='
 
 function retrieveResults(query) {
     return (async () => {
         if (typeof query !== 'string' || query.trim().length === 0) throw new ContentError(EMPTY_INPUT)
 
         const result = []
-        let response = await fetch(`${API_URL}${query}`, { method: 'GET' })
+        let responseSearchCall = await fetch(`${API_URL_SEARCH}${query}`, { method: 'GET' })
 
-        if (response.status === 404) throw new Error(UNKNOWN_MESSAGE)
-        if (response.status === 200) {
-            const { Search } = await response.json()
+        if (responseSearchCall.status === 404) throw new Error(UNKNOWN_MESSAGE)
+        
+        if (responseSearchCall.status === 200) {
+            const { Search } = await responseSearchCall.json()
             if (Search === undefined) throw new NotFoundError(NO_DATA_FOUND)
 
             for (const item of Search) {
-                let element = {};
-                element.title = item.Title
-                element.image = item.Poster
-                element.year = item.Year.slice(0,4)
-                element.id = item.imdbID;
+                let mainElement = {}
 
-                const obj = await (async () => {
-                    let response2 = await fetch(`${API_URL2}${element.id}`, { method: 'GET' })
-                    let el = {}
+                mainElement.title = item.Title
+                mainElement.image = item.Poster
+                mainElement.year = item.Year.slice(0,4)
+                mainElement.id = item.imdbID;
 
-                    if (response2.status === 200) {
-                        const res = await response2.json()
+                const object = await (async () => {
+                    let responseIdCall = await fetch(`${API_URL_ID}${mainElement.id}`, { method: 'GET' })
+                    
+                    if (responseIdCall.status === 404) throw new Error(UNKNOWN_MESSAGE)
+
+                    let secondaryElement = {}
+
+                    if (responseIdCall.status === 200) {
+                        const res = await responseIdCall.json()
                         const { Plot, imdbRating } = res
-                        el.description = Plot
-                        el.rating = imdbRating
+                        secondaryElement.description = Plot
+                        secondaryElement.rating = imdbRating
                     }
-                    return el
+                    return secondaryElement
                 })()
 
-                const { description, rating } = obj
-                element.description = description
-                element.rating = rating
-                result.push(element);
+                const { description, rating } = object
+
+                mainElement.description = description
+                mainElement.rating = rating
+
+                result.push(mainElement);
             }
             return result
         }

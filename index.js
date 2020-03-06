@@ -17,9 +17,9 @@ const onSearch = async (event) => {
     const { query: { value: query } } = event.target
 
     document.getElementsByClassName('Results')[0].removeChild(document.getElementsByClassName('List')[0])
-    const ul = document.createElement('ul')
-    ul.classList.add('Results-list', 'List')
-    document.getElementsByClassName('Results')[0].append(ul)
+    const initialList = document.createElement('ul')
+    initialList.classList.add('Results-list', 'List')
+    document.getElementsByClassName('Results')[0].append(initialList)
 
     try {
         resultsList = await retrieveResults(query)
@@ -58,9 +58,9 @@ const onSortBy = async (event) => {
     }
 
     document.getElementsByClassName('Results')[0].removeChild(document.getElementsByClassName('List')[0])
-    const ul = document.createElement('ul')
-    ul.classList.add('Results-list', 'List')
-    document.getElementsByClassName('Results')[0].append(ul)
+    const initialList = document.createElement('ul')
+    initialList.classList.add('Results-list', 'List')
+    document.getElementsByClassName('Results')[0].append(initialList)
 
     showData(filteredResults)
 }
