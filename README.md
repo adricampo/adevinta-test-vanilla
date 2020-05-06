@@ -1,6 +1,6 @@
 # Adevinta front-end-test 
 
-## Deploy link: [adevinta-test](https://adricampo.github.io/adevinta-test-vanilla/)
+## Deploy link: [adevinta-test](https://adricampo.github.io/film-store/)
 
 ## Project Main Goals 
 
